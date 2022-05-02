@@ -58,7 +58,7 @@ blockquote{
     padding: 0;
 }
 header{
-    background-image: url(/Images/headerbackground);
+    background-image: url(/CSS/img/headerbackground);
     background-size: cover;
     background-color: #d5a6bd;
     height: 130px;
@@ -128,7 +128,7 @@ main form input{
 footer{
     height: 130px;
     width: 100%;
-    background-image: url(/Images/headerbackground);
+    background-image: url(/CSS/img/headerbackground);
     background-size: cover;
     background-color: #d5a6bd;
     color: black;

@@ -70,7 +70,7 @@ blockquote{
     padding: 0;
 }
 header{
-    background-image: url(/Images/headerbackground);
+    background-image: url(/CSS/img/headerbackground);
     background-size: cover;
     background-color: #d5a6bd;
     height: 130px;
@@ -121,7 +121,7 @@ main{
 #photo{ 
     height: 800px;
     width: 100%;
-    background-image: url(/Images/opcion2.JPG);
+    background-image: url(/CSS/img/opcion2.JPG);
     background-size: cover;
 }
 .box{
@@ -139,11 +139,11 @@ main{
     transform: scale(1.1);
 }
 section .item1{
-    background-image: url(/Images/anillados.jpg);
+    background-image: url(/CSS/img/anillados.jpg);
     background-size: cover;
 }
 section .item2{
-    background-image: url(/Images/clasicos);
+    background-image: url(/CSS/img/clasicos);
     background-size: cover;
 }
 /*section .item3{
@@ -157,7 +157,7 @@ section .item4{
 footer{
     height: 130px;
     width: 100%;
-    background-image: url(/Images/headerbackground);
+    background-image: url(/CSS/img/headerbackground);
     background-size: cover;
     background-color: #d5a6bd;
     color: black;
