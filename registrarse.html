@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/iniciar-sesion.css">
+    <title>Mei Journaling</title>
+</head>
+<body>
+    <blockquote>
+        <div class="animated-text">
+            <div class="line">Las palabras vuelan,</div>
+            <div class="line">lo escrito permanece.</div>
+            <div class="line">Titus Flavius Vespasiano</div>
+        </div>
+    </blockquote>
+<!--<blockquote>Las palabras vuelan, lo escrito permanece. -Titus Flavius Vespasiano</blockquote>-->
+    <header>
+        <img src="Images/logo.png" id="logoJpg" alt="Mei Journaling">
+        <h1 class="logo">Mei Journaling</h1>
+		<nav class="menu">
+			<ul>
+                <li><a href="index.html">inicio</a></li>
+				<li><a href="quien-soy.html">quién soy</a></li>
+				<li><a href="productos.html">productos</a></li>
+				<li><a href="precios.html">precios</a></li>
+				<li><a href="iniciar-sesion.html">iniciar sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+    <h1><u>Registrarse</u></h1>
+    <form action="enviar.php" method="post">
+        <p><strong><u>Datos personales</u></strong></p>
+        <label for="">Nombre/s</label>
+        <input type="text" placeholder="Ingrese su nombre/s"><br>
+        <label for="">Apellido/s</label>
+        <input type="text" placeholder="Ingrese su apellido/s"><br>
+        <br>
+        <p>Ingrese su sexo</p>
+        <input type="radio" name="Sexo">
+        <label for="">Hombre</label>
+        <br>
+        <input type="radio" name="Sexo">
+        <label for="">Mujer</label>
+        <br>
+        <input type="radio" name="Sexo">
+        <label for="">Otro</label>
+        <br>
+        <input type="radio" name="Sexo">
+        <label for="">Prefiero no decirlo</label>
+        <br>
+        <br>
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="Fecha"><br>
+        <label for="">Añadir foto de perfil</label>
+        <input type="file">
+        <br>
+        <br>
+        <p><strong><u>Datos de contacto</u></strong></p>
+        <label for="">Celular</label>
+        <input type="tel" placeholder="Ingrese su celular"><br>
+        <label for="">Email</label>
+        <input type="email" name="Email" placeholder="Ingrese su email">
+        <br>
+        <br>
+        <p><strong><u>Datos para iniciar sesión</u></strong></p>
+        <label for="">Usuario</label>
+        <input type="text" placeholder="Ingrese nombre un usuario"><br>
+        <i>*El usuario debe tener como mínimo 1 número.</i>
+        <br>
+        <br>
+        <label for="">Contraseña</label>
+        <input type="password" placeholder="Ingrese una contraseña"><br>
+        <i>*La contraseña debe tener entre 6 y 10 caracteres, mínimo 1 letra mayúscula y 1 número.</i>
+        <br>
+        <br>
+        <br>
+        <input type="checkbox">
+        <label for="">Acepto los términos y condiciones</label><br>
+        <input type="checkbox">
+        <label for="">Quiero subscribirme al newsletter</label>
+        <br>
+        <br>
+        <input type="submit" value="Registrarse">
+        <br>
+    </form>
+</main>
+   <br>
+   <br>
+<footer>
+    <a href="https://www.facebook.com/mei.journaling" id="facebook">
+		<i class="fa-brands fa-facebook"></a></i>
+	</a>
+	<a href="https://www.instagram.com/mei.journaling/" id="instagram">
+		<i class="fa-brands fa-instagram"></i>
+	</a>
+    <p> → &#x2728; Apoyá mi emprendimiento siguiéndome en las redes &#x2728; ← </p>
+</footer>
+<a href="https://api.whatsapp.com/" id="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>

@@ -1,0 +1,296 @@
+/*blockquote{
+    background-color: #b5c5d7;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}*/
+blockquote{
+    width: 100%;
+    height: 32px;
+    position: relative;
+}
+.animated-text{
+    width: 100%;
+    background-color: #b5c5d7;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    transform: translate(-50px,-50%);
+    height: 60px;
+    overflow: hidden;
+}
+.line{
+    margin-top: 12px;
+    text-align: center;
+    line-height: 60px;
+}
+.line:first-child{
+    animation: anim 20s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-top: 0;
+    }
+    16%{
+        margin-top: -60px;
+    }
+    33%{
+        margin-top: -120px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    66%{
+        margin-top: -120px;
+    }
+    82%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(/Images/headerbackground);
+    background-size: cover;
+    background-color: #d5a6bd;
+    height: 130px;
+    width: 100%;
+    padding-top: 5px;
+}
+header #logoJpg{
+    height: 120px;
+    margin-top: auto;
+    margin-left: 40px;
+    float: left;
+}
+header .logo{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px; 
+}
+header .menu{
+    float: right;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header a:hover{
+    color: chocolate;
+}
+body{
+    background-color: #ffffff;
+}
+main{
+    text-align: center;
+}
+main h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: capitalize;
+}
+main form input{
+    color: #bfa294;
+}
+main p{
+    margin-bottom: 20px;
+}
+footer{
+    height: 130px;
+    width: 100%;
+    background-image: url(/Images/headerbackground);
+    background-size: cover;
+    background-color: #d5a6bd;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+footer p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding-top: 5px;
+    text-transform: lowercase;
+}
+footer a :hover{
+    color: chocolate;
+}
+footer #facebook{
+    color: black;
+    text-decoration: none;
+}
+footer #instagram{
+    color: black;
+    text-decoration: none;
+}
+#whatsapp{
+    height: 60px;
+    width: 60px;
+    padding: 10px 3px 0px 3px;
+    font-size: 47px;
+    line-height: 10px;
+    border-radius: 50%;    
+    background-color: green;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#whatsapp :hover{
+    transform: scale(1.25);
+}
+@media only screen and (min-width: 472px) and (max-width: 551px){
+    header{
+        background-color: #d5a6bd;
+        height: 150px;
+        width: 100%;
+        padding-top: 5px;
+    }
+    header #logoJpg{
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+    }
+    header .logo{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-transform: uppercase;
+        float: left;
+        margin-top: 30px;
+        margin-left: 10px; 
+    }
+    header .menu{
+        float: left;
+        margin-top: auto;
+        margin-left: 10px;
+    }
+    header ul li{
+        list-style: none;
+        display: inline-block;
+        margin-top: 1px;
+        padding-right: 5px;
+    }
+    header ul li a{
+        color: black;
+        text-decoration: none;
+        text-transform:uppercase;
+        font-size: 8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+@media only screen and (min-width: 551px) and (max-width: 600px){
+    header{
+        background-color: #d5a6bd;
+        height: 150px;
+        width: 100%;
+        padding-top: 5px;
+    }
+    header #logoJpg{
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+    }
+    header .logo{
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-transform: uppercase;
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px; 
+    }
+    header .menu{
+        float: left;
+        margin-top: auto;
+        margin-left: 20px;
+    }
+    header ul li{
+        list-style: none;
+        display: inline-block;
+        margin-top: 1px;
+        padding-right: 5px;
+    }
+    header ul li a{
+        color: black;
+        text-decoration: none;
+        text-transform:uppercase;
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1112px){
+    header{
+        background-color: #d5a6bd;
+        height: 150px;
+        width: 100%;
+        padding-top: 5px;
+    }
+    header #logoJpg{
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 20px;
+        float: left;
+    }
+    header .logo{
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-transform: uppercase;
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px; 
+    }
+    header .menu{
+        float: left;
+        margin-top: auto;
+        margin-left: 20px;
+    }
+    header ul li{
+        list-style: none;
+        display: inline-block;
+        margin-top: 1px;
+        padding-right: 5px;
+    }
+    header ul li a{
+        color: black;
+        text-decoration: none;
+        text-transform:uppercase;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
