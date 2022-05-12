@@ -3,103 +3,114 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="Images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="CSS/iniciar-sesion.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/registrarse.css">
     <title>Mei Journaling</title>
 </head>
 <body>
-    <blockquote>
-        <div class="animated-text">
-            <div class="line">Las palabras vuelan,</div>
-            <div class="line">lo escrito permanece.</div>
-            <div class="line">Titus Flavius Vespasiano</div>
-        </div>
-    </blockquote>
-<!--<blockquote>Las palabras vuelan, lo escrito permanece. -Titus Flavius Vespasiano</blockquote>-->
-    <header>
-        <img src="Images/logo.png" id="logoJpg" alt="Mei Journaling">
-        <h1 class="logo">Mei Journaling</h1>
-		<nav class="menu">
-			<ul>
-                <li><a href="index.html">inicio</a></li>
-				<li><a href="quien-soy.html">quién soy</a></li>
-				<li><a href="productos.html">productos</a></li>
-				<li><a href="precios.html">precios</a></li>
-				<li><a href="iniciar-sesion.html">iniciar sesión</a></li>
-			</ul>
-		</nav>
+    <div class="animated-text">
+        <div class="line">Las palabras vuelan,</div>
+        <div class="line">lo escrito permanece.</div>
+        <div class="line">Titus Flavius Vespasiano</div>
+    </div>
+    <header>		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+			  <a class="navbar-brand" href="index.html">
+				<img src="/CSS/img/logo.png" alt="" width="110px" height="110px">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+				<div class="navbar-nav">
+				  <a class="nav-link text-uppercase active" aria-current="page" href="index.html">Inicio</a>
+				  <a class="nav-link text-uppercase" href="quien-soy.html">Quién soy</a>
+				  <a class="nav-link text-uppercase" href="productos.html">Productos</a>
+				  <a class="nav-link text-uppercase" href="precios.html">Precios</a>
+				  <a class="nav-link text-uppercase" href="iniciar-sesion.html">Iniciar sesión</a>
+				</div>
+			</div>
+		  </nav>
 	</header>
-    <main>
-    <h1><u>Registrarse</u></h1>
+<main>
+    <h1><u><strong>Registrarse:</strong></u></h1>
     <form action="enviar.php" method="post">
         <p><strong><u>Datos personales</u></strong></p>
-        <label for="">Nombre/s</label>
+        <label class="lead" for="">Nombre/s</label>
         <input type="text" placeholder="Ingrese su nombre/s"><br>
-        <label for="">Apellido/s</label>
+        <label class="lead" for="">Apellido/s</label>
         <input type="text" placeholder="Ingrese su apellido/s"><br>
         <br>
         <p>Ingrese su sexo</p>
         <input type="radio" name="Sexo">
-        <label for="">Hombre</label>
+        <label class="lead" for="">Hombre</label>
         <br>
         <input type="radio" name="Sexo">
-        <label for="">Mujer</label>
+        <label class="lead" for="">Mujer</label>
         <br>
         <input type="radio" name="Sexo">
-        <label for="">Otro</label>
+        <label class="lead" for="">Otro</label>
         <br>
         <input type="radio" name="Sexo">
-        <label for="">Prefiero no decirlo</label>
+        <label class="lead" for="">Prefiero no decirlo</label>
         <br>
         <br>
-        <label for="">Fecha de nacimiento</label>
+        <label class="lead" for="">Fecha de nacimiento</label>
         <input type="date" name="Fecha"><br>
-        <label for="">Añadir foto de perfil</label>
+        <label class="lead" for="">Añadir foto de perfil</label>
         <input type="file">
         <br>
         <br>
+        <hr>
         <p><strong><u>Datos de contacto</u></strong></p>
-        <label for="">Celular</label>
+        <label class="lead" for="">Celular</label>
         <input type="tel" placeholder="Ingrese su celular"><br>
-        <label for="">Email</label>
+        <label class="lead" for="">Email</label>
         <input type="email" name="Email" placeholder="Ingrese su email">
         <br>
         <br>
+        <hr>
         <p><strong><u>Datos para iniciar sesión</u></strong></p>
-        <label for="">Usuario</label>
+        <label class="lead" for="">Usuario</label>
         <input type="text" placeholder="Ingrese nombre un usuario"><br>
-        <i>*El usuario debe tener como mínimo 1 número.</i>
+        <i class="lead"><em>*El usuario debe tener como mínimo 1 número.</em></i>
         <br>
         <br>
-        <label for="">Contraseña</label>
+        <label class="lead" for="">Contraseña</label>
         <input type="password" placeholder="Ingrese una contraseña"><br>
-        <i>*La contraseña debe tener entre 6 y 10 caracteres, mínimo 1 letra mayúscula y 1 número.</i>
+        <i class="lead"><em>*La contraseña debe tener entre 6 y 10 caracteres, mínimo 1 letra mayúscula y 1 número.</em></i>
         <br>
         <br>
         <br>
+        <hr>
         <input type="checkbox">
-        <label for="">Acepto los términos y condiciones</label><br>
+        <label class="lead" for="">Acepto los términos y condiciones</label><br>
         <input type="checkbox">
-        <label for="">Quiero subscribirme al newsletter</label>
+        <label class="lead" for="">Quiero subscribirme al newsletter</label>
         <br>
         <br>
         <input type="submit" value="Registrarse">
         <br>
     </form>
 </main>
-   <br>
-   <br>
-<footer>
+<br>
+<br>
+<footer class="container-fluid">
     <a href="https://www.facebook.com/mei.journaling" id="facebook">
 		<i class="fa-brands fa-facebook"></a></i>
 	</a>
 	<a href="https://www.instagram.com/mei.journaling/" id="instagram">
 		<i class="fa-brands fa-instagram"></i>
 	</a>
-    <p> → &#x2728; Apoyá mi emprendimiento siguiéndome en las redes &#x2728; ← </p>
+    <p class="clead"> → &#x2728; Apoyá mi emprendimiento siguiéndome en las redes &#x2728; ← </p>
 </footer>
 <a href="https://api.whatsapp.com/" id="whatsapp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
